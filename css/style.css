@@ -1,0 +1,386 @@
+﻿@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Cormorant|Open+Sans&display=swap');
+/*
+
+font-family: 'Cormorant', serif;
+font-family: 'Open Sans', sans-serif;
+
+*/
+*{
+    font-family: Arial, serif;
+    //font-size: 16px;
+    color: #fff;
+}
+
+body{
+    background-color: #1c476a;
+}
+
+.wrap__all{
+ display: flex;
+ flex-direction: column;
+ max-width: 1280px;
+ margin: 0 auto;
+}
+
+header{
+    display: flex;
+    border-bottom: 1px solid #4a4a49;
+    padding: 10px 15px 30px;
+    flex-wrap: wrap;
+
+}
+
+.photo{
+    text-align: center;
+    flex: 1 0 40%;
+}
+
+.photo__img{
+    width: 50%;
+    border-radius: 100%;
+    
+}
+
+.description{
+    flex: 1 0 60%;
+    align-self: center;
+    text-align: center;
+}
+
+.description__name{
+    text-transform: uppercase;
+    font-size: 56px;
+    font-weight: 900;
+    color: #edbd6b;
+
+}
+
+.description__date,
+.description__diagnosis{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 0;
+
+}
+.description__diagnosis{
+    font-size: 46px;
+}
+        
+    
+.content{
+    padding: 20px 0 40px;
+}
+
+.photo__galery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.photo__galery__item{
+    display: flex;
+    flex: 0 0 24%;
+    align-items: center;
+}
+
+.photo__galery__img{
+    width: 100%;
+}
+
+.fundraising{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.fundraising__title{
+    font-size: 50px;
+    font-weight: 800;
+    color: #edbd6b;
+}
+.count{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0;
+   
+    
+}
+
+.count__in__total,
+.count__collected,
+.count__percent{
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+}
+
+
+.count__in__total{
+    flex: 1 0 50%;
+}
+
+.in__total{
+    
+}
+
+#in__total{
+
+}
+
+.count__collected{
+    flex: 1 0 50%;
+}
+
+.collected{
+    
+}
+
+#collected{}
+
+.count__percent{
+    flex: 1 0 auto;
+}
+
+.percent{
+    
+}
+#percentage__total{}
+
+
+.history{
+display: flex;
+}
+
+.history__text{
+    color: #fff;
+    font-size: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+/*слайдер*/
+.slider{
+    position: relative;
+    padding: 0px 60px;
+}
+
+.slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    margin: -30px 0 0 0;
+    z-index: 10;
+    font-size: 0;
+    width: 60px;
+    height: 100px;
+}
+
+.slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url('../img/arrow_prev.png') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next{
+    right: 0;
+    background: url('../img/arrow_next.png') 0 0 / 100% no-repeat;
+}
+
+.slider_item{
+    padding: 0 5px;
+    text-align: center;
+}
+
+.requisites{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.requisites__title{
+    color: #edbd6b;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.requisites__all{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.requisites__item{
+    flex: 0 0 420px;
+    padding: 5px 0 10px 32px;
+    white-space: pre-line; 
+    font-size: 20px;
+    color: #fff;
+}
+
+.mts{
+    background: url("../img/logo/MTS.png") 0 24px / 30px no-repeat;
+}
+
+.mtbank{
+    background: url("../img/logo/mtbank.png") 0 24px / 30px no-repeat;
+}
+
+.belarusbank{
+    background: url("../img/logo/belarusbank.png") 0 24px / 30px no-repeat;
+}
+
+.webmoney{
+    background: url("../img/logo/webmoney.png") 0 24px / 30px no-repeat;
+}
+
+.sber{
+    background: url("../img/logo/sberbank.png") 0 24px / 30px no-repeat;
+}
+
+.el__money{
+    background: url("../img/logo/webmoney.png") 0 24px / 30px no-repeat, url("../img/logo/y_money.png") 0 84px / 30px no-repeat;
+}
+
+footer{
+    margin: 30px 0;
+}
+
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 0 0 0;
+}
+
+.social__link{
+    font-size: 36px;
+    transition: all 0.4s ease ;
+}
+
+.social__link:hover{
+    color: #edbd6b;
+}
+
+@media (max-width: 967px){
+    .history,
+    .requisites
+    {
+        padding: 0 15px;
+    }
+    .requisites__all{
+        justify-content: center;
+    }
+    .slider__img{
+        width: 100%;
+    }
+    .slick-track{
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px){
+    .photo__galery{
+        justify-content: center;
+    }
+
+    .photo__galery__item{
+        flex: 0 1 auto;
+    }
+
+    .count__in__total, 
+    .count__collected, 
+    .count__percent{
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 430px){
+    .description__name{
+        font-size: 45px;
+    }
+
+    .description__diagnosis{
+        font-size: 28px;
+    }
+
+    /*.document__img{
+        height: auto;
+        width: 100%;
+    }*/
+
+    .fundraising__title {
+        font-size: 38px;  
+    }
+
+    .requisites__item{
+        flex: 0 1 auto;
+    }
+    
+
+    .count__in__total, 
+    .count__collected, 
+    .count__percent{
+        
+    }
+    .count__in__total, 
+    .count__collected{
+        flex: 0 1 auto;
+        padding:  7px 0;
+    }
+
+    .description__name{
+        font-size: 34px;
+    }
+
+    .requisites__item{
+        font-size: 18px;
+    } 
+}
